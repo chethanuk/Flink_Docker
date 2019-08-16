@@ -19,17 +19,17 @@ RUN mv $FLINK_HOME/opt/flink-metrics-datadog-*.jar $FLINK_HOME/lib
 RUN mv $FLINK_HOME/opt/flink-metrics-slf4j-*.jar $FLINK_HOME/lib
 
 # SQL Client flink-sql-client
-RUN mv $FLINK_HOME/opt/flink-sql-client-*.jar $FLINK_HOME/lib
+RUN mv $FLINK_HOME/opt/flink-sql-*.jar $FLINK_HOME/lib
 # flink-table
-RUN mv $FLINK_HOME/opt/flink-table-*.jar $FLINK_HOME/lib
+RUN mv $FLINK_HOME/opt/flink-table*.jar $FLINK_HOME/lib
 
 # Flink-python
-RUN mv $FLINK_HOME/opt/flink-python-*.jar $FLINK_HOME/lib
+RUN mv $FLINK_HOME/opt/flink-python*.jar $FLINK_HOME/lib
 # flink-streaming-python
-RUN mv $FLINK_HOME/opt/flink-streaming-python-*.jar $FLINK_HOME/lib
+RUN mv $FLINK_HOME/opt/flink-streaming-python*.jar $FLINK_HOME/lib
 
 # Flink-queryable-state
-RUN mv $FLINK_HOME/opt/flink-queryable-state-*.jar $FLINK_HOME/lib
+RUN mv $FLINK_HOME/opt/flink-queryable-state*.jar $FLINK_HOME/lib
 
 # flink-ml
-RUN mv $FLINK_HOME/opt/flink-ml-*.jar $FLINK_HOME/lib
+RUN mv $FLINK_HOME/opt/flink-ml*.jar $FLINK_HOME/lib
