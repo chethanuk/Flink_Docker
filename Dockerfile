@@ -1,4 +1,4 @@
-FROM flink:1.8
+FROM flink:1.9
 # docker build -t chethanuk/flink:1.8 .
 # docker build -t chethanuk/flink:1.8 .
 
