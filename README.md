@@ -18,7 +18,16 @@ You can also run a TaskManager (worker). Notice that workers need to register wi
 $ docker run --name flink_taskmanager -d -t flink taskmanager
 ```
 
-Running a cluster using Docker Compose
+## Create custom Docker image with GCS connector
+
+Edit the Flink, Scala, GCS connections versions in [properties](./properties) file as you need. Then run the following
+command to build and push the image:
+
+```bash
+make build push IMAGE_TAG=gcr.io/[MY_PROJECT]/flink:[FLINK_VERSION]-scala_[SCALA_VERSION]-gcs
+```
+
+## Running a cluster using Docker Compose
 With Docker Compose you can create a Flink cluster:
 
 ```

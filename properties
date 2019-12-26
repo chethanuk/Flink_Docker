@@ -1,0 +1,7 @@
+# Properties included by Makefile and then passed to Dockerfile.
+
+FLINK_VERSION ?= 1.9.1
+SCALA_VERSION ?= 2.11
+FLINK_HADOOP_VERSION ?= 2.8.3-9.0
+# Hadoop3 -> hadoop3-2.0.0
+GCS_CONNECTOR_VERSION ?= hadoop2-2.0.0
