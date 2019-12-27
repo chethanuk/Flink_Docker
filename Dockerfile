@@ -25,3 +25,6 @@ RUN echo "Downloading ${GCS_CONNECTOR_URI}" && \
   wget -q -O /opt/flink/lib/${GCS_CONNECTOR_NAME} ${GCS_CONNECTOR_URI}
 RUN echo "Downloading ${FLINK_HADOOP_JAR_URI}" && \
   wget -q -O /opt/flink/lib/${FLINK_HADOOP_JAR_NAME} ${FLINK_HADOOP_JAR_URI}
+
+# $FLINK_HOME/opt/flink-s3-fs-hadoop-*.jar 
+RUN mv $FLINK_HOME/opt/flink-s3-fs-presto-*.jar $FLINK_HOME/opt/flink-metrics-prometheus-*.jar  $FLINK_HOME/opt/flink-metrics-slf4j-*.jar $FLINK_HOME/opt/flink-sql-*.jar $FLINK_HOME/opt/flink-table*.jar $FLINK_HOME/opt/flink-python*.jar $FLINK_HOME/opt/flink-streaming-python*.jar $FLINK_HOME/opt/flink-queryable-state*.jar $FLINK_HOME/opt/flink-ml*.jar $FLINK_HOME/lib
